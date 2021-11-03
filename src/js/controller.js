@@ -244,7 +244,7 @@ class Controller {
                     document.body.removeChild(link);
                     URL.revokeObjectURL(dataURL);
                 });
-
+                console.log('initScreenshotButton1', dataURL);
                 this.player.events.trigger('screenshot', dataURL);
             });
         }
